@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="nav02.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+</head>
+<body>
+    <div class="header">
+        <div class="navbar">
+            <div class="logo">
+                <img src="/image/logo.png" alt="image" height="50px">
+                <h4><i>PicsArt</i></h4>
+            </div>
+
+            <div class="search">
+                <input type="text" class="find" name="" id="" placeholder="Search...">
+                <div class="find-logo"><i class="fa-solid fa-magnifying-glass"></i></div>
+            </div>
+
+            <div class="menu">
+                <ul class="menu-list">
+                    <li class="menu-items"><a href="#">Gallery</a></li>
+                    <li class="menu-items"><a href="#">Services</a></li>
+                    <li class="menu-items"><a href="#">About</a></li>
+                    <li class="menu-items"><a href="#">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="burger">
+                <i class="fa-solid fa-bars" name="bars"></i>
+                <i class="fa-solid fa-xmark" name ="cross"></i>
+            </div>
+        </div>
+    </div>
+
+    <script> 
+        const btn = document.querySelector(".burger");
+        const nav = document.querySelector(".navbar");
+        // const btn_cross = document.querySelector(".fa-xmark");
+
+        btn.addEventListener("click",function(){
+            nav.classList.toggle("active");
+            // btn_cross.style.display = "block";
+
+        });
+    </script>
+</body>
+</html>
