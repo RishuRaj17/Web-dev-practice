@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function calculateSimpleInterest(principal, rate, time) {
+  var interest = (principal * rate * time) / 100;
+  return interest;
+}
+
+// Example usage
+var principal = 1000; // Principal amount
+var rate = 5; // Interest rate in percentage
+var time = 2; // Time in years
+
+var interest = calculateSimpleInterest(principal, rate, time);
+document.write("Simple Interest: ", interest);
+
+    </script>
+</body>
+</html>

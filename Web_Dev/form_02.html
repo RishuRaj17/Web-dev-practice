@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+ 
+
+</head>
+<body>
+    <center>
+    <hr size="4" noshade>
+    <br>
+    <h1><cite>Registeration Form</cite></h1>
+    <br>
+    <hr size="4" noshade>
+    </center>
+    <form method="post">
+        <fieldset>
+            <legend><cite><h2>Personal Information</h2></cite></legend>
+        <p>Name: <input type="text" name="name" placeholder="Enter your name..." required></p>
+        <p>Email: <input type="email" name="email>" required placeholder="xyz@gmail.com"></p>
+        <p>Phn. no.: <input type="tel" name="tel" required placeholder="+91...." maxlength="10"></p>
+        <p>Pincode: <input type="number" required placeholder="6 digit pin..." ></p>
+        <p>Address: <textarea rows="5" cols="30" placeholder="Type your address...."></textarea></p>
+         <fieldset>
+            <legend>Gender</legend>
+            <p>Male<input type="radio" name="gender" value="male"> Female <input type="radio" name="gender" value="female"> Transgender <input type="radio" name="gender" value="transgender"></p>
+         </fieldset>
+         <br>
+         <p><h2>Payment Mode</h2></p>
+         <hr size="2" noshade>
+         <p>Account number: <input type="number" name="acc_num" required placeholder="XXX-XXX-XXX-XXX"></p>
+         <p>Card Type: 
+            <select name="card_type" required>
+                <option value="">--Select Card Type--</option>
+                <option value="visa">Visa</option>
+                <option value="rupay">Rupay</option>
+                <option value="mastercard">Master Card</option>
+            </select>
+         </p>
+         <P>Expiration date: <input type="date" name="exp_date" required></P>
+         <p>Cvv: <input type="password" required placeholder="3 digit cvv..." maxlength="3"></p>
+         <p>Payment type: <input list="pay_type" name="pay_type">
+            <datalist id="pay_type">
+                <option value="Credit card">
+                <option value="Debit card">
+                <option value="UPI">
+            </datalist>
+         </p>
+         <p><input type="checkbox" name="T&C" required >I accept all the T&Q</p>
+         <p><input type="checkbox" name="reciept" >I need invoice</p>
+         <label for="month">Month: </label>
+         <input type="month" name="month">
+         <br>
+         <br>
+         <label for="file">Upload previous invoice: </label>
+         <input type="file" name="file">
+         <br>
+         <br>
+         <label for="favcolor"> Choose your favourite color: </label>
+         <input type="color" name="favcolor" value="#f2f2f2">
+         <br>
+         <br>
+         <input type="button" name="pay_now" value="Pay Now" onclick="alert('Payment done!')">
+        </fieldset>
+    </form>
+</body>
+</html>

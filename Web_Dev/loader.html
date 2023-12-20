@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        
+        #loader-box{
+            /* background-color: lightskyblue; */
+            height: 500px;
+            padding: 20px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #loader{
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            border: 5px solid lightgrey;
+            border-top: 5px solid whitesmoke;
+            animation: loader 1s ease-out 0s infinite normal;
+            transform: translate(-50%,-50%);
+        }
+
+        @keyframes loader {
+            from{
+                transform: rotate(0deg);
+            }
+            to{
+                transform: rotate(360deg);
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div id="loader-box">
+        <div id="loader"></div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+  
+    <div id="header">
+      <h1>Registeration Form</h1>
+      <h6>Please fill all the texts in the field</h6>
+    </div>
+    <div id="form">
+    <form>
+        <label for="Full_name">Your Name:</label>
+        <input type="text" name="name" id="name" placeholder="Your Full Name" required autofocus>
+        <br>
+        <br>
+        <label for="email">Your Email:</label>
+        <input type="email" name="email" id="email" placeholder="Valid Email Address" required>
+        <br>
+        <br>
+        <label for="phn_no">Phn no.: </label>
+        <input type="tel" name="phn_no" required placeholder="+91">
+        <br>
+        <br>
+        <label for="dob">Date of birth: </label>
+        <input type="date" name="dob" id="date" required>
+        <br>
+        <br>
+        <fieldset>
+          <legend>Gender</legend>
+          <p>Male<input type="radio" name="gender" value="male"> Female<input type="radio" name="gender" value="female"> Transgender<input type="radio" name="gender" value="transgender"></p>
+        </fieldset>
+        <br>
+        <br>
+        <label for="address">Address: </label>
+        <textarea name="address" rows="5" cols="30" required placeholder="Your address here.."></textarea>
+        <br>
+        <br>
+        <label for="pincode">Pincode: </label>
+        <input type="number" name="pincode" id="pincode" maxlength="6" required placeholder="Six digit pincode">
+        <br>
+        <br>
+        <label for="message">Message:</label>
+        <textarea cols="30" rows="10" name="message" id="message" placeholder="Your Message to Us..."></textarea>
+        <br>
+        <br>
+        <label for="subject">Subject: </label>
+        <select name="subject" id="subject" required>
+          <option value="select">---select---</option>
+          <option value="job_inquiry">Job Inquiry</option>
+          <option value="internship">Internship</option>
+        </select>
+        <br>
+        <br>
+        <input type="checkbox" name="check">
+        <label for="check">I have read all the <a href="#">Terms</a> & <a href="#">Conditions</a></label>
+        <br>
+        <br>
+        <input type="submit" value="Register">
+    
+    </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,91 @@
+*{
+    box-sizing: border-box;
+}
+
+nav a{
+    text-decoration: none;
+    text-align: center;
+    padding: 30px;
+    float: left;  
+}
+nav{
+    padding: 0px 280px;
+    text-align: center;
+    overflow: hidden;
+    
+}
+
+a[href="#"],h3,
+a[href="#Contact"]{
+    color: rgb(241, 32, 136);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+table{
+    margin: 0px 60px;
+}
+td{
+    padding: 40px;
+}
+
+li{
+    list-style-type: none;
+    color: whitesmoke;
+}
+.Follow a{
+    color: whitesmoke;
+    text-decoration: none;
+    padding: 4px;
+    float: left;
+}
+.Follow{
+    overflow: hidden;
+}
+h4{
+    color: whitesmoke;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body{
+    background-color: rgb(24, 36, 92);
+}
+
+input[type="button"]{
+    padding: 5px;
+    border-radius: 6px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: whitesmoke;
+    background-color: rgb(241, 32, 136);
+    border: 1px;
+    margin: 5px;
+}
+
+#fname,#lname,#email,#phn_no,#message{
+    border-radius: 5px;
+    padding: 6px;
+    border: 1px;
+    background-color:rgba(27, 43, 110, 0.855) ;
+}
+
+::placeholder{
+    color: rgba(245, 245, 245, 0.834);
+}
+
+input[type="button"]:hover{
+    background-color:rgb(255, 82, 168) ;
+    cursor: pointer;
+}
+
+a:hover{
+    color: tomato;
+    text-decoration: underline;
+}
+
+/* a:visited{
+    color: tomato;
+} */
+
+a:active{
+    color: tomato;
+    text-decoration: underline;
+}

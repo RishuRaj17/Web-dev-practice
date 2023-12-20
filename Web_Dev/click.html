@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   
+</head>
+<body>
+    <input type="button" value="Click Me" id="mybbtn">
+    <script>
+        function sayhello(){
+            alert("Hello World !")
+        }
+        document.getElementById("mybbtn").onclick = sayhello;
+    </script>
+
+    <a href="#" onmouseover="alert('Kya be chutiye?')">Hover me</a>
+    <button type="button" onmouseout="alert('you have right-clicked a button!');">Right Click on Me</button>
+
+    <div id="chu" style="background-color: orangered; padding: 20px; margin: 20px; dispaly: block;" onmouseout="alert('Hello Bolana!')">
+        <h1>Hello World</h1>
+    </div>
+</body>
+</html>

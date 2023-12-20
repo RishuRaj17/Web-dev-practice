@@ -1,0 +1,67 @@
+*{
+    box-sizing: border-box;
+}
+#header{
+    background-color: #4daea1;
+    padding: 8px 40px 8px 40px;
+    margin: 40px 140px 0px;
+    font-size: 1.5;
+    line-height: 3px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: whitesmoke;
+}
+
+#form{
+    border: 1px solid #f2f2f2;
+    background-color:  #efefef;
+    padding: 25px;
+    margin: 0px 140px 40px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+#pincode,#date,
+select,textarea{
+    width: 100%;
+    padding: 8px;
+    margin: 5px;
+    margin-bottom: 4px;
+    background-color: rgb(246, 244, 244);
+    border: 1px solid #eae2e2;
+    border-radius: 3px;
+
+}
+option{
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+input[type="submit"]{
+    width: 100%;
+    padding: 8px;
+    font-size: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-radius: 8px;
+    border: 1px solid #eae2e2;
+    background-color: #4daea1;
+    color: whitesmoke;
+}
+input[type="submit"]:hover{
+    background-color: #3bc765;
+    cursor: pointer;
+}
+
+fieldset{
+    border: 1px solid rgba(214, 210, 210, 0.934);
+    border-radius: 8px;
+}
+
+input[type="radio"]{
+    margin: 0px 40px 0px 4px;
+}
+

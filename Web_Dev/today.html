@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src=""></script>
+    <style>
+        .box{
+            width: 100px;
+            height: 100px;
+            background-color: orange;
+            margin-top: 30px;
+            position: relative;
+        }
+
+
+    </style>
+
+    <script>
+        $(document).ready(function(){
+            $("button").click(function(){
+                $(".box").animate()
+            })
+        })
+    </script>
+</head>
+<body>
+    <button type="button">Start Animation</button>
+    <p><strong>Note:</strong>Click the "StarT Animation" button multiple times to see how the relative value works.</p>
+    <div class="box"></div>
+</body>
+</html>

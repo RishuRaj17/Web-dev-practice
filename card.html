@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+
+      html,
+      body {
+        width: 100%;
+        height: 100vh;
+      }
+
+      .container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .content > h4 {
+        color: crimson;
+      }
+
+      .box-1 {
+        position: relative;
+        box-shadow: 0px 0px 6px black;
+        border-radius: 15px;
+        padding: 15px;
+        width: 300px;
+        height: 200px;
+        transition: 0.5s all linear;
+      }
+
+      .image-box {
+        z-index: 100;
+        position: relative;
+        width: 100%;
+        height: 100%;
+        transform: translateX(-50px);
+      }
+
+      img {
+        height: 100%;
+        border-radius: 8px;
+        box-shadow: 0px 0px 4px black;
+        overflow: hidden;
+      }
+
+      .content {
+        text-align: center;
+        transform: translateX(-300px);
+        opacity: 0;
+      }
+
+      .box-1:hover > .content {
+        opacity: 1;
+        transform: translateX(0);
+        transition: 1s all linear;
+      }
+
+      .box-1:hover {
+        width: 680px;
+        transition: 0.3s;
+      }
+
+      @media (max-width: 810px) {
+        .container {
+          flex-direction: column;
+        }
+
+        .box-1 {
+            width: 300px;
+          padding: 20px;
+        }
+
+        .image-box {
+          transform: translate(0, -30px);
+        }
+
+        img {
+          width: 100%;
+          height: 170px;
+          border-radius: 8px;
+          box-shadow: 0px 0px 4px black;
+          overflow: hidden;
+        }
+
+        .content {
+            margin-bottom: 10px;
+          text-align: center;
+          transform: translate(0, -300px);
+          opacity: 0;
+        }
+
+        .box-1:hover > .content {
+          opacity: 1;
+          transform: translateY(0);
+          transition: 0.5s all linear;
+        }
+
+        .box-1:hover {
+            width: 300px;
+          height: 300px;
+          transition: 0.3s;
+        }
+      }
+    </style>
+  </head>
+  <body class="container">
+    <div class="box-1 container">
+      <div class="image-box">
+        <img src="/image/fam.jpg" alt="image" />
+      </div>
+      <div class="content">
+        <h2>Hello World!</h2>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos
+          magnam dolor quae dolorum rem quibusdam voluptatum sequi, sed
+          delectus! Culpa.
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

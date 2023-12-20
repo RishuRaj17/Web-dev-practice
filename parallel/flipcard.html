@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        html,body{
+            width: 100%;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        .container{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            perspective: 600px;
+        }
+
+        .card{
+            height: 400px;
+            width: 280px;
+            border-radius: 10px ;
+            box-shadow: 0px 0px 20px rgb(142, 136, 136);
+            border: 1px solid;
+            position: relative;
+            transition: transform 1500ms;
+            transform-style: preserve-3d;
+        }
+
+        .front{ 
+            background-image: url(har.jpg);
+            background-size: cover;
+        }
+
+        .container:hover > .card{
+            cursor: pointer;
+            transform: rotateY(180deg);
+            
+        }
+
+        .front, .back{
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            border-radius: 10px ;
+            backface-visibility: hidden;
+        }
+        
+        .back{
+            padding: 30px;
+            flex-direction: column;
+            text-align: center;
+            transform: rotateY(180deg);
+            background-color: rgb(215, 215, 203);
+        }
+
+
+
+    </style>
+</head>
+<body class="container">
+    <div class="container">
+        <div class="card container">
+            <div class="front container">
+                <!-- <img src="har.jpg" alt=""> -->
+            </div>
+            <div class="back container ">
+                <h2>Back Side!</h2>
+                <p>Some more information about the card!</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
