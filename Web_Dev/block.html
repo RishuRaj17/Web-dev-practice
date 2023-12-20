@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Blockchain Web Page</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+    h1 {
+      text-align: center;
+    }
+    .block {
+      border: 1px solid #000;
+      padding: 10px;
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Blockchain Web Page</h1>
+
+  <div id="blockchain"></div>
+
+  <script>
+    // Define a Block class
+    class Block {
+      constructor(index, timestamp, data, previousHash) {
+        this.index = index;
+        this.timestamp = timestamp;
+        this.data = data;
+        this.previousHash = previousHash;
+        this.hash = this.calculateHash();
+      }
+    
+      calculateHash() {
+        // Simple hash calculation for demonstration purposes
+        return this.index + this.timestamp + JSON.stringify(this.data) + this.previousHash;
+      }
+    }
+    
+    // Create a genesis block
+    const genesisBlock = new Block(0, Date.now(), "Genesis Block", "0");
+    
+    // Create an array to store the blockchain
+    const blockchain = [genesisBlock];
+    
+    // Display the blockchain on the web page
+    const blockchainDiv = document.getElementById("blockchain");
+    blockchain.forEach(block => {
+      const blockDiv = document.createElement("div");
+      blockDiv.classList.add("block");
+      blockDiv.innerHTML = `
+        <h3>Block ${block.index}</h3>
+        <p><strong>Timestamp:</strong> ${block.timestamp}</p>
+        <p><strong>Data:</strong> ${block.data}</p>
+        <p><strong>Hash:</strong> ${block.hash}</p>
+        <p><strong>Previous Hash:</strong> ${block.previousHash}</p>
+      `;
+      blockchainDiv.appendChild(blockDiv);
+    });
+  </script>
+</body>
+</html>

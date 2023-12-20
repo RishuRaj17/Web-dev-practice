@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .card {
+  width: 300px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 10px;
+  position: relative;
+}
+
+.card h3 {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.card p {
+  font-size: 14px;
+  color: #888;
+}
+
+.carousel-container {
+  width: 100%;
+  overflow: hidden;
+  margin-top: 10px;
+  position: relative;
+}
+
+.carousel {
+  display: flex;
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
+  overflow-x: auto;
+  scrollbar-width: none; 
+  -ms-overflow-style: none; 
+}
+
+.slide {
+  flex-shrink: 0;
+  scroll-snap-align: start;
+  width: 100%;
+}
+
+.slide img {
+  width: 100%;
+  height: auto;
+}
+
+.scroll-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: transparent;
+  border: none;
+  font-size: 24px;
+  color: #888;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.prev-button {
+  left: 10px;
+}
+
+.next-button {
+  right: 10px;
+}
+
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h3>Card Title</h3>
+        <div class="carousel-container">
+          <div class="carousel">
+            <div class="slide">
+              <img src="template.png" alt="Image 1">
+            </div>
+            <div class="slide">
+              <img src="template.png" alt="Image 2">
+            </div>
+            <div class="slide">
+              <img src="template.png" alt="Image 3">
+            </div>
+            <!-- Add more slide elements as needed -->
+          </div>
+          <button class="scroll-button prev-button">&lt;</button>
+          <button class="scroll-button next-button">&gt;</button>
+        </div>
+        <p>Card Description</p>
+      </div>
+      <script>
+        document.addEventListener('DOMContentLoaded', function() {
+  const carousel = document.querySelector('.carousel');
+  const prevButton = document.querySelector('.prev-button');
+  const nextButton = document.querySelector('.next-button');
+
+  prevButton.addEventListener('click', function() {
+    carousel.scrollBy({
+      left: -carousel.offsetWidth,
+      behavior: 'smooth'
+    });
+  });
+
+  nextButton.addEventListener('click', function() {
+    carousel.scrollBy({
+      left: carousel.offsetWidth,
+      behavior: 'smooth'
+    });
+  });
+});
+
+      </script>
+</body>
+</html>

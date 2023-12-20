@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registration Form</title>
+    <script>
+        function validateForm() {
+            var name = document.forms["registrationForm"]["name"].value;
+            var age = document.forms["registrationForm"]["age"].value;
+            var email = document.forms["registrationForm"]["email"].value;
+            var password = document.forms["registrationForm"]["password"].value;
+            var reenterPassword = document.forms["registrationForm"]["reenterPassword"].value;
+
+            if (name == "") {
+                alert("Name can not be empty");
+                return false;
+            }
+
+            if (age == "") {
+                alert("Age can't be empty");
+                return false;
+            }
+
+            if (isNaN(age)) {
+                alert("Age must be a number");
+                return false;
+            }
+
+            if (email == "") {
+                alert("Email must be filled out");
+                return false;
+            }
+
+            if (password == "") {
+                alert("Password must be filled out");
+                return false;
+            }
+
+            if (reenterPassword == "") {
+                alert("Please re-enter your password");
+                return false;
+            }
+
+            if (password != reenterPassword) {
+                alert("Passwords do not match");
+                return false;
+            }
+        }
+    </script>
+    <style>
+        body{
+            background-color: #f2f6ff;
+    
+    
+        }
+        form{
+            text-align: center;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 40px;
+            width: 700px;
+            background-color:rgb(41, 209, 209);
+            border-radius: 10px;
+            border: 1px solid #ccc;
+            box-shadow: 0px 0px 15px;
+        }
+        h2{
+            color: whitesmoke;
+            font-size: 32px;
+            padding-top:56px;
+            padding-bottom:32px;
+        }
+        input{
+            background-color:rgb(41, 209, 209);
+            border-radius: 5px;
+            font-size:18px;
+            padding:12px;
+            margin: 20px;
+            border-top: 0;
+            border-right:0;
+            border-left:0;
+            border-bottom:1px solid #e8e6e6;
+            width:60%;
+           
+        }
+
+        
+
+        ::placeholder{
+            color: #e7e7e7;
+        }
+
+        #submitbutton{
+            background-color: rgb(42, 231, 42);
+            padding-top: 12px;
+            padding-bottom:12px;
+            padding-left: 24px;
+            padding-right: 24px;
+            font-size: 18px;
+            border: none;
+            color: white;
+            width:150px;
+            text-align: center;
+            border-radius: 8px;
+        }
+
+        #submitbutton:hover{
+            box-shadow: 0px 0px 10px;
+            cursor: pointer;
+            background-color: rgb(43, 246, 43);
+        }
+    </style>
+</head>
+<body>
+    <form name="registrationForm" onsubmit="return validateForm()">
+        <h2>Registration Form</h2>
+        <!-- <label for="name">Name:</label> -->
+        <input type="text" id="name" name="name" required placeholder="Full Name"><br>
+
+        <!-- <label for="age">Age:</label> -->
+        <input type="date" id="age" name="age" style="color: rgb(240, 239, 239);" required placeholder="D.O.B"><br>
+
+        <!-- <label for="email">Email:</label> -->
+        <input type="email" id="email" name="email" required placeholder="Email Address"><br>
+
+        <!-- <label for="password">Password:</label> -->
+        <input type="password" id="password" name="password" required placeholder="Password"><br>
+
+        <!-- <label for="reenterPassword">Re-enter Password:</label> -->
+        <input type="password" id="reenterPassword" name="reenterPassword" required placeholder="Confirm Password"><br>
+
+        <input id="submitbutton" type="submit" value="Register">
+    </form>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<script type="text/javascript">  
+    function validate(){  
+    var name=document.f.name.value;  
+    var passwordlength=document.f.Password.value.length;  
+    var status=false;  
+    if(name==""){  
+    document.getElementById("a").innerHTML=  
+    " <img src='bg.jpg'> Please enter your name";  
+    status=false;
+    }else{  
+    document.getElementById("a").innerHTML=" <img src='img_flowers.jpg'/>";  
+    status=true;
+    }  
+      
+    if(passwordlength<6){  
+    document.getElementById("b").innerHTML=  
+    " <img src='bg.jpg'/> Password must be greater than 6";  
+    status=false; 
+    }else{  
+    document.getElementById("b").innerHTML=" <img src='bg.jpg'/>";  
+    }  
+      
+    return status;  
+    }  
+    </script> 
+    <form name="f">
+    <span id="a"></span>
+     Name:<input type="text/plain" name="name"><br>
+    <span id="b"></span>
+    Password:<input type="password" name="Password"><br>
+    <input type="submit" value="ok" onclick="validate()">
+    </form>

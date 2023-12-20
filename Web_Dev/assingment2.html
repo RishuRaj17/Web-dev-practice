@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Fibonacci Series</title>
+  <script>
+    function FibonacciSeries() {
+      seriesLength = document.getElementById('Length').value;
+      
+     
+        fibonacciSeries = [0, 1];
+
+        for (let i = 2; i < seriesLength; i++) {
+          nextNumber = fibonacciSeries[i - 1] + fibonacciSeries[i - 2];
+          fibonacciSeries.push(nextNumber);
+        }
+
+        document.getElementById('result').innerHTML = 'Fibonacci Series: ' + fibonacciSeries.join(', ');
+      }
+
+      function greet(name) {
+  document.write("Hello, " + name + "!"+ "<br><br>" );
+}
+
+var personName = "John";
+greet(personName);
+    
+
+function calculateCircleArea(radius) {
+  var area = Math.PI * Math.pow(radius, 2);
+  return area;
+}
+
+var radius = 5; 
+var circleArea = calculateCircleArea(radius);
+document.write("The area of the circle is: " + circleArea + "<br><br>");
+
+
+function findItemsInArray(array, item) {
+  var foundItems = [];
+
+  for (var i = 0; i < array.length; i++) {
+    if (array[i] === item) {
+      foundItems.push(i);
+    }
+  }
+
+  return foundItems;
+}
+
+var array = [1, 2, 3, 2, 4, 2, 5]; 
+var item = 2;
+var foundIndices = findItemsInArray(array, item);
+document.write("The item " + item + " was found at indices: " + foundIndices);
+
+
+  </script>
+</head>
+<body>
+  <h1>Fibonacci Series</h1>
+  
+  <label for="Length">Length:</label>
+  <input type="number" id="Length" min="1">
+  <button onclick="FibonacciSeries()">Generate</button>
+  
+  <div id="result"></div>
+</body>
+</html>

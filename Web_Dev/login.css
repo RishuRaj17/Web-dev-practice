@@ -1,0 +1,135 @@
+*{
+    box-sizing: border-box;
+}
+
+/* body{
+    background-color: rgb(51, 51, 51);
+} */
+
+table #hello{
+    /* background-color: red; */
+    background-image: url(bg.jpg);
+    height: 400px;
+    padding: 40px;
+    color: whitesmoke;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+h1{
+    font-size: 60px;   
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+table{
+    margin: 60px 70px;
+    padding: 0px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 15px rgb(78, 78, 78);
+   
+}
+
+#facebook{
+    color: whitesmoke;
+    background-color: rgb(66, 103, 178);
+    padding: 4px 50px;
+    border: none;
+    margin: 5px 20px;
+    font-size: 20px;
+    border-radius: 15px;
+    font-size: 22px;
+}
+
+#twitter{
+    color: whitesmoke;
+    background-color:  rgb(29, 161, 242) ;
+    padding: 5px 50px;
+    border: none;
+    font-size: 18px;
+    border-radius: 15px;
+    font-size: 20px;
+    
+}
+
+#twitter:hover{
+    background-color:  rgb(96, 194, 255);
+    cursor: pointer;
+    /* box-shadow: 0px 0px 5px rgb(134, 209, 255) ; */
+}
+
+#facebook:hover{
+    background-color: rgb(105, 153, 249);
+    cursor: pointer;
+    /* box-shadow: 0px 0px 5px rgb(141, 179, 255); */
+}
+h2{
+    line-height: 60px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h4{
+    color: rgb(169, 168, 168);
+}
+
+table #login{
+    /* border: 1px solid rgb(135, 134, 134); */
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-left: none;
+    background-color: white;
+    padding: 10px 30px;
+}
+
+input[type="text"],
+input[type="password"]{
+    /* border-top: none;
+    border-left: none;
+    border-right: none; */
+    /* border-bottom: 1px rgb(4, 4, 4); */
+    border-radius: 8px;
+    border: 1px solid rgb(169, 168, 168);
+    padding: 5px;
+    margin: 10px;
+    width: 100%;
+}
+
+input[type="submit"]{
+    background-color: rgb(5, 159, 5);
+    margin: 15px;
+    float: right;
+    border: none;
+    border-radius: 6px;
+    padding: 6px 15px;
+    color: whitesmoke;
+}
+
+input[type="submit"]:hover{
+    background-color: rgb(8, 220, 8); 
+    cursor: pointer;
+    box-shadow: 2px 2px 1px rgb(153, 255, 153);
+}
+
+#Forgot{
+    text-decoration: none;
+    color: rgb(169, 168, 168);
+    float: right;
+}
+#remember{
+    color: rgb(169, 168, 168);
+}
+
+input[type="checkbox"]{
+    accent-color: rgb(10, 211, 10);
+}
+
+
+input[type="password"]:hover{
+    box-shadow: 0px 0px 8px rgb(153, 255, 153);
+}
+
+input[type="text"]:hover{
+    box-shadow: 0px 0px 8px rgb(153, 255, 153);
+}
+

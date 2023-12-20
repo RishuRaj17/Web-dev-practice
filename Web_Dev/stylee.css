@@ -1,0 +1,81 @@
+#one,#two,#three,#four{
+    border: 1px solid black;
+    width: 100%;
+    color: rgb(192, 11, 11);
+    padding: 5px;
+
+}
+
+#one{
+    background-color: rgb(157, 154, 154);
+}
+
+#two{
+    background-color: rgb(173, 171, 171);
+}
+
+#four{
+    background-color: rgb(219, 216, 216);
+}
+
+#three{
+    background-color: rgb(202, 199, 199);
+}
+
+p{
+    background-color: yellowgreen;
+    color: whitesmoke;
+    text-align: center;
+    font-size: 21px;
+    padding: 5px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif
+}
+
+#contain{
+    display: flex;
+}
+
+@media all and (max-width: 900px){
+    p{
+        height: 80px;
+        font-size: 40px;
+        padding: 10px 0px;
+        overflow: auto;
+    }
+    #contain{
+        display: grid;
+        text-align: center;
+    }
+    #one,#two,#three,#four{
+        padding: 30px;
+        height: 150px;
+        font-size: 30px;
+        line-height: 8px;
+    }
+
+}
+
+@media all and (min-width: 901px) and (max-width:1200px){
+    #firstrow, #secondrow{
+        width: 200%;
+    }
+    #one,#two,#three,#four{
+        padding: 40px;
+        font-size: 25px;
+    }
+
+    p{
+        height: 80px;
+        font-size: 40px;
+        padding: 10px 0px;
+        overflow: auto;
+    }
+  
+}
+
+@media all and (min-width: 1201px){
+   #firstrow, #secondrow{
+     display: inline-flex;
+     width: 100%;
+   }
+}

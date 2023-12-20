@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        .flex-container{
+            border-radius: 8px;
+            padding: 10px;
+            margin: 30px;
+            height: 500px;
+            background-color: rgb(220, 219, 219);
+            display: flex;
+            flex-direction: column;
+            /* flex-wrap: wrap; */
+            /* justify-content: space-evenly; */
+            /* align-content: space-evenly; */
+        }
+
+        .flex-item{
+            padding: 15px;
+            width: 29.3%;
+            height: 230px;
+            background-color: tomato;
+            margin: 10px;
+            color: whitesmoke;
+            font-size: 20px;
+            border-radius: 8px;
+            
+        }
+
+        #first{
+            margin: 0px 0px 8px;
+            display: flex;
+        }
+
+        .flexx,.flexxx{
+            padding: 8px;
+            margin: 0px 8px 10px;
+            width: 24%;
+            height: 30px;
+            border-radius: 8px;
+            font-size: 15px;
+            font-size: 20px;
+            background-color: tomato;
+            color: whitesmoke;
+        }
+
+        #second{
+            display: flex;
+        }
+
+        #third{
+            display: flex;
+        }
+
+        #item-first,#item-second,#item-third{
+            display: flex;
+        }
+
+        .item-1,.item-2,.item-3{
+            padding: 15px;
+            width: 29.3%;
+            background-color: whitesmoke;
+            margin: 4px;
+            color: tomato;
+            font-size: 20px;
+            border-radius: 8px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="flex-container">
+        <div id="first">
+           <div class="flex-item">1
+            <div id="item-first">
+             <div class="item-1">1</div>
+             <div class="item-1">2</div>
+             <div class="item-1">3</div>
+            </div>
+            <div id="item-second">
+                <div class="item-2">1</div>
+                <div class="item-2">2</div>
+                <div class="item-2">3</div>
+                <div class="item-2">4</div>
+            </div>
+
+            <div id="item-third">
+                <div class="item-3">1</div>
+                <div class="item-3">2</div>
+                <div class="item-3">3</div>
+                <div class="item-3">4</div>
+                <div class="item-3">5</div>
+            </div>
+           </div>
+           <div class="flex-item">2</div>
+           <div class="flex-item">3</div>
+        </div>
+
+        <div id="second">
+            <div class="flexx">1</div>
+            <div class="flexx">2</div>
+            <div class="flexx">3</div>
+            <div class="flexx">4</div>
+        </div>
+
+        <div id="third">
+            <div class="flexxx">1</div>
+            <div class="flexxx">2</div>
+            <div class="flexxx">3</div>
+            <div class="flexxx">4</div>
+            <div class="flexxx">5</div>
+        </div>
+    </div>
+</body>
+</html>
